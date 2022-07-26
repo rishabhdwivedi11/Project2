@@ -25,8 +25,8 @@ namespace Cs_con_booklibrary
                 + "2) Borrower");
             Console.WriteLine();
             Console.WriteLine("Choose option from menu");
-            int option1 = int.Parse(Console.ReadLine());
-            if (option1 == 1)
+            int opt1 = int.Parse(Console.ReadLine());
+            if (opt1 == 1)
             {
                 Console.WriteLine("May I know your choice?");
                 Console.WriteLine("\nMenu\n" +
@@ -34,8 +34,8 @@ namespace Cs_con_booklibrary
                                     "2) Newspaper");
                 Console.WriteLine();
                 Console.WriteLine("Choose option from menu");
-                int option2 = int.Parse(Console.ReadLine());
-                if (option2 == 1)
+                int opt2 = int.Parse(Console.ReadLine());
+                if (opt2 == 1)
                 {
                     Console.WriteLine("\nMenu\n" +
                                     "1) Add Book \n" +
@@ -45,22 +45,22 @@ namespace Cs_con_booklibrary
                                     
                     Console.WriteLine();
                     Console.WriteLine("Choose option from menu");
-                    int option3 = int.Parse(Console.ReadLine());
-                    if (option3 == 1)
+                    int opt3 = int.Parse(Console.ReadLine());
+                    if (opt3 == 1)
                     {
                         Books.AddBook();
 
                     }
 
-                    else if (option3 == 2)
+                    else if (opt3 == 2)
                     {
                         Books.DelBook();
                     }
-                    else if (option3 == 3)
+                    else if (opt3 == 3)
                     {
                         Books.SearchBook();
                     }
-                    else if (option3 == 4)
+                    else if (opt3 == 4)
                     {
                         Books.ReturnBook();
                     }
@@ -71,7 +71,7 @@ namespace Cs_con_booklibrary
                     }
 
                 }
-                if (option2 == 2)
+                if (opt2 == 2)
                 {
                     Console.WriteLine("\nMenu\n" +
                                     "1) Add Newspaper \n" +
@@ -81,20 +81,20 @@ namespace Cs_con_booklibrary
                                    
                     Console.WriteLine();
                     Console.WriteLine("Choose option from menu");
-                    int option3 = int.Parse(Console.ReadLine());
-                    if (option3 == 1)
+                    int opt3 = int.Parse(Console.ReadLine());
+                    if (opt3 == 1)
                     {
                         Newspaper.AddNewspaper();
                     }
-                    else if (option3 == 2)
+                    else if (opt3 == 2)
                     {
                         Newspaper.DelNewspaper();
                     }
-                    else if (option3 == 3)
+                    else if (opt3 == 3)
                     {
                         Newspaper.SearchNewspaper();
                     }
-                    else if (option3 == 4)
+                    else if (opt3 == 4)
                     {
                         Newspaper.ReturnNewspaper();
                     }
@@ -106,7 +106,7 @@ namespace Cs_con_booklibrary
                 }
 
             }
-            if (option1 == 2)
+            if (opt1 == 2)
             {
                 Console.WriteLine("May i know your choice?");
                 Console.WriteLine("\nMenu\n" +
@@ -114,8 +114,8 @@ namespace Cs_con_booklibrary
                                     "2) Newspaper");
                 Console.WriteLine();
                 Console.WriteLine("Choose option from menu");
-                int option2 = int.Parse(Console.ReadLine());
-                if (option2 == 1)
+                int opt2 = int.Parse(Console.ReadLine());
+                if (opt2 == 1)
                 {
                     Console.WriteLine("\nMenu\n" +
                                     "1)Borrow book\n" +
@@ -124,17 +124,17 @@ namespace Cs_con_booklibrary
                     
                     Console.WriteLine();
                     Console.WriteLine("Choose option from menu");
-                    int option3 = int.Parse(Console.ReadLine());
-                    if (option3 == 1)
+                    int opt3 = int.Parse(Console.ReadLine());
+                    if (opt3 == 1)
                     {
                         Borrower.BorrowBook();
                     }
-                    else if (option3 == 2)
+                    else if (opt3 == 2)
                     {
                         Borrower.SearchBook();
                     }
 
-                    else if (option3 == 3)
+                    else if (opt3 == 3)
                     {
                         Books.ReturnBook();
                     }
@@ -144,7 +144,7 @@ namespace Cs_con_booklibrary
                     }
 
                 }
-                if (option2 == 2)
+                if (opt2 == 2)
                 {
                     Console.WriteLine("\nMenu\n" +
                                     "1) Borrow Newspaper \n" +
@@ -152,16 +152,16 @@ namespace Cs_con_booklibrary
                                     "3) Search Newspaper");
                     Console.WriteLine();
                     Console.WriteLine("Choose option from menu");
-                    int option3 = int.Parse(Console.ReadLine());
-                    if (option3 == 1)
+                    int opt3 = int.Parse(Console.ReadLine());
+                    if (opt3 == 1)
                     {
                         Borrower.BorrowNewspaper();
                     }
-                    else if (option3 == 2)
+                    else if (opt3 == 2)
                     {
                         Borrower.ReturnNewspaper();
                     }
-                    else if (option3 == 3)
+                    else if (opt3 == 3)
                     {
                         Newspaper.SearchNewspaper();
                     }
@@ -173,10 +173,10 @@ namespace Cs_con_booklibrary
                 }
 
             }
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("Let's Play It Again!!!");
+            Console.WriteLine("Could you come again!!!");
             Console.WriteLine();
             Console.WriteLine();
             function();                            //For Continuously Running the Application 
